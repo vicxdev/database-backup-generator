@@ -9,16 +9,16 @@ This script generates backups of all databases in a PostgreSQL container and sav
 # How to use
 ## Setup
 1. Clone this repository
-2. Copy the file `database-backup-generator.sh` to your host machine
+2. Copy the file `database_backup_generator.sh` to your host machine
 3. Give execution permissions to the file
 ```bash
-chmod +x database-backup-generator.sh
+chmod +x database_backup_generator.sh
 ```
 
 ## Default configuration
 4. Run the script
 ```bash
-./database-backup-generator.sh
+./database_backup_generator.sh
 ```
 
 ## Custom configuration
@@ -30,7 +30,7 @@ chmod +x database-backup-generator.sh
 
 Example:
 ```bash
-./database-backup-generator.sh --container-name my_postgres_container --username my_user --backup-directory /tmp/backups --default-dbs
+./database_backup_generator.sh --container-name my_postgres_container --username my_user --backup-directory /tmp/backups --default-dbs
 ```
 
 ## Crontab
@@ -40,6 +40,6 @@ crontab -e
 ```
 5. For example, if you want to run the script every Sunday at 00:00, you can add the following line to your crontab file (replace the paths with your own):
 ```bash
-0 0 * * 0 /database-backup-generator.sh >> /tmp/backups/database-backup-generator.log 2>&1
+0 0 * * 0 /database_backup_generator.sh >> /tmp/backups/database_backup_generator.log 2>&1
 ```
-(The script will generate a log file in the path `/tmp/backups/database-backup-generator.log`)
+(The script will generate a log file in the path `/tmp/backups/database_backup_generator.log`)
