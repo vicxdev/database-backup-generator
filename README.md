@@ -23,6 +23,7 @@ chmod +x database_backup_generator.sh
 
 ## Custom configuration
 4. You can run the script with the following parameters:
+- `-t`: Run interactive mode
 - `--container-name <container_name>`: The name of the container with the PostgreSQL image
 - `--username <username>`: The username of the PostgreSQL user
 - `--backup-directory <path>`: The path of the folder where the backups will be saved
