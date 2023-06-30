@@ -1,5 +1,5 @@
 # Database Backup Generator
-This script generates backups of all databases in a PostgreSQL container and saves them in a folder in the host machine.
+This script generates backups of all databases in a PostgreSQL Docker container and saves them in a folder in the host machine.
 
 # Requirements
 - Docker [*](https://docs.docker.com/engine/install/)
