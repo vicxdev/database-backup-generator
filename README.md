@@ -3,6 +3,7 @@ This script generates backups of all databases in a PostgreSQL Docker container 
 
 # Comments/Improvements
 - A script should be created to delete certain old backups from time to time so that the available space does not fill up
+- Could work with more database systems than just PostgreSQL
 
 # Requirements
 - Docker [*](https://docs.docker.com/engine/install/)
